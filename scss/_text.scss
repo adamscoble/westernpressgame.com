@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'G7 Star Force';
+    src: url('font/g7_star_force.woff2') format('woff2'),
+         url('font/g7_star_force.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+	margin: 0;
+}
+
+h2 {
+	font-family: 'G7 Star Force', sans-serif;
+	text-transform: uppercase;
+	color: #66ff66;
+	margin: 0 0 ($spacing / 2);
+	line-height: 22px;
+	font-size: 16px;
+    letter-spacing: 3px;
+
+	@media only screen and (min-width: $breakSmall) {
+		margin: 0 0 $spacing;
+		line-height: 30px;
+	    font-size: 24px;
+	}
+}
+
+h3 {
+	margin: -5px 0 0;
+    text-align: center;
+    font-size: 14px;
+    color: #443934;
+
+	@media only screen and (min-width: $breakSmall) {
+    	text-align: right;
+    	margin-right: 1.5%;
+	}
+
+	@media only screen and (min-width: $breakLarge) {
+    	margin-right: 15px;
+	}
+}
+
+p {
+	margin: 0 0 $spacing;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+	small {
+		font-size: 0.7em;
+	}
+
+	@media only screen and (min-width: $breakLarge) {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+a {
+	color: #ffcc00;
+}
